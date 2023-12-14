@@ -1,0 +1,32 @@
+/* General */
+
+:root {
+    --bg-color-main: #140152;
+    --bg-color-second: #04052e;
+    --bg-color-third: #22007c;
+    --bg-color-text: whitesmoke;
+}
+
+body {
+    background-color: var(--bg-color-main);
+}
+
+/* Navigation & Logo */
+
+.navbar {
+    background-color: var(--bg-color-second);
+    --bs-navbar-color: var(--bg-color-text);
+    --bs-navbar-active-color: var(--bg-color-text);
+    --bs-navbar-brand-color: var(--bg-color-text);
+    --bs-navbar-hover-color: var(--bg-color-text);
+    --bs-navbar-brand-hover-color: var(--bg-color-text);
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.nav-item {
+    padding-right: 20px;
+}
+
