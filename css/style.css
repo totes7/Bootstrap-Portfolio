@@ -1,6 +1,12 @@
+
+
+/* Google Font */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+
 /* General */
+
 
 :root {
     --bg-color-main: #140152;
@@ -11,11 +17,14 @@
 }
 
 body {
+    color: var(--bg-color-text);
     background-color: var(--bg-color-main);
     font-family: 'Roboto Mono';
 }
 
+
 /* Navigation & Logo */
+
 
 .navbar {
     background-color: var(--bg-color-second);
@@ -59,7 +68,9 @@ body {
     width: 100%;
 }
 
+
 /* Hero Section */
+
 
 .jumbotron {
     height: 400px;
@@ -80,3 +91,15 @@ body {
 #jumbotron-btn:hover {
     box-shadow: 4px 4px var(--bg-color-second);
 }
+
+
+/* Profile & Skills */
+
+
+.profile-skills {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--bg-color-second);
+    border-radius: 15px;
+}
+
