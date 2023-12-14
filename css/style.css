@@ -61,7 +61,7 @@ main {
     content: '';
     width: 0;
     height: 3px;
-    background: var(--bg-color-four);
+    background: var(--bg-color-text);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -101,6 +101,7 @@ main {
 
 
 .profile-skills {
+    margin-bottom: 20px;
     padding: 20px;
     font-size: 14px;
     text-align: center;
@@ -111,5 +112,41 @@ main {
 
 .profile-skills h2 {
     text-align: left;
+}
+
+
+/* Portfolio */
+
+
+#portfolio {
+    margin: 40px;
+    padding: 20px;
+    background-color: var(--bg-color-third);
+    border-radius: 15px;
+    box-shadow: 7px 7px 15px black;
+}
+
+.cardContainer {
+    margin: 30px 0;
+}
+
+.card {
+    background-color: var(--bg-color-second);
+    color: var(--bg-color-text);
+    margin: 10px;
+    box-shadow: 7px 7px 15px black;
+}
+
+.card:hover {
+    margin: 2px;
+}
+
+.card-button {
+    background-color: var(--bg-color-four);
+    color: var(--bg-color-text);
+}
+
+.card-button:hover {
+    background-color: var(--bg-color-main);
 }
 
