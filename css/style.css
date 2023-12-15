@@ -9,11 +9,12 @@
 
 
 :root {
-    --bg-color-main: #140152;
-    --bg-color-second: #04052e;
-    --bg-color-third: #22007c;
-    --bg-color-four: #0d00a4;
+    --bg-color-main: #04052e;
+    --bg-color-second: #06085d;
+    --bg-color-third: #deddf4;
+    --bg-color-four: #006eff;
     --bg-color-text: whitesmoke;
+    --bg-color-text-dark: black;
 }
 
 body {
@@ -31,7 +32,7 @@ main {
 
 
 .navbar {
-    background-color: var(--bg-color-second);
+    background-color: var(--bg-color-main);
     --bs-navbar-color: var(--bg-color-text);
     --bs-navbar-active-color: var(--bg-color-text);
     --bs-navbar-brand-color: var(--bg-color-text);
@@ -78,8 +79,11 @@ main {
 
 .jumbotron {
     height: 400px;
-    color: var(--bg-color-text);
-    background-color: var(--bg-color-third);
+    color: var(--bg-color-text-dark);
+    background-image: url(../images/bg-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -121,9 +125,6 @@ main {
 #portfolio {
     margin: 40px;
     padding: 20px;
-    background-color: var(--bg-color-third);
-    border-radius: 15px;
-    box-shadow: 7px 7px 15px black;
 }
 
 .cardContainer {
