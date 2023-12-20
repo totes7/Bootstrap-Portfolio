@@ -27,13 +27,13 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#profile">Profile</a>
+                    <a class="nav-link" href="#jumbotron-btn">Profile</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" href="#portfolio-link">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#contact">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -46,8 +46,24 @@
 
     <div class="jumbotron">
         <h1 class="display-4">Junior Full-Stack Web Developer</h1>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, error!</p>
-        <a id="jumbotron-btn" class="btn btn-lg" href="#" role="button">Get in Contact!</a>
+        <a id="jumbotron-btn" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#contact" role="button">Get in Contact!</a>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title" id="exampleModalLabel">Contact</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>antonio.manno.7@gmail.com</p>
+                    <a href="https://github.com/totes7" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/antonio-manno-0b0138236" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <main>
@@ -70,7 +86,7 @@
                         <li>Technologies: 			HTML5, CSS3, JavaScript, Python, Jupyter Notebook</li>
                         <li>Frameworks:			Django, Flask, jQuery, Bootstrap, Streamlit</li>
                         <li>Databases:			PostgreSQL, MySQL</li>
-                        <li>Version Control:		             Git, Github</li>
+                        <li id="portfolio-link">Version Control:		             Git, Github</li>
                     </ul>
                 </div>
 
@@ -158,13 +174,17 @@
     </main>
 
     <footer>
-        
+        <p>Click the button for contact details</p> 
+        <a id="footer-btn" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#contact" role="button">Get in Contact!</a>
     </footer>
 
 
 
     <!-- Booststrap CDN Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- FontAwsome Script -->
+  <script src="https://kit.fontawesome.com/6ca55bebc5.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
