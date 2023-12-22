@@ -73,6 +73,10 @@ main {
     width: 100%;
 }
 
+.navbar-toggler {
+    background-color: var(--bg-color-second);
+}
+
 
 /* Hero Section */
 
